@@ -2,7 +2,10 @@ import { Reveal } from "@/components/site/Reveal";
 import { BUSINESS, REVIEWS, REVIEWS_URL } from "@/data/site";
 
 export function Reviews() {
-  const [lead, ...rest] = REVIEWS;
+  const lead = REVIEWS[0];
+  const rest = REVIEWS.slice(1);
+  if (!lead) return null;
+
 
   return (
     <section
