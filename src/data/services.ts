@@ -11,7 +11,7 @@ const SETMORE_BOOK_URL =
 const bookUrl = (productId: string) =>
   `${SETMORE_BOOK_URL}&products=${productId}`;
 
-export type VehicleType = "Sedans" | "SUVs & Trucks" | "Cars & boats";
+export type VehicleType = "Sedans" | "SUVs & Trucks" | "All vehicles";
 
 export type CategoryId =
   | "maintenance"
@@ -219,7 +219,7 @@ export const SERVICES: Service[] = [
     id: "paint-correction-graphene",
     name: "Paint Correction & Graphene Coating",
     category: "correction",
-    vehicle: "Cars & boats",
+    vehicle: "All vehicles",
     duration: "5 hrs",
     price: 850,
     priceNote: "From $850 · final quote after inspection",
@@ -233,7 +233,7 @@ export const SERVICES: Service[] = [
     id: "headlight-restoration",
     name: "Headlight Restoration",
     category: "addons",
-    vehicle: "Cars & boats",
+    vehicle: "All vehicles",
     duration: "45 min",
     price: 60,
     blurb: "Yellow or oxidized headlights restored and protected with a coating.",
@@ -243,7 +243,7 @@ export const SERVICES: Service[] = [
     id: "engine-bay-detail",
     name: "Engine Bay Detail",
     category: "addons",
-    vehicle: "Cars & boats",
+    vehicle: "All vehicles",
     duration: "45 min",
     price: 60,
     blurb:
@@ -254,7 +254,7 @@ export const SERVICES: Service[] = [
     id: "ppf-wrap-removal",
     name: "PPF & Wrap Removal",
     category: "addons",
-    vehicle: "Cars & boats",
+    vehicle: "All vehicles",
     duration: "3 hrs",
     price: 250,
     priceNote: "Call before booking — we'll need a few details",
@@ -265,7 +265,7 @@ export const SERVICES: Service[] = [
     id: "odor-elimination",
     name: "Odor Elimination",
     category: "addons",
-    vehicle: "Cars & boats",
+    vehicle: "All vehicles",
     duration: "1 hr 30 min",
     price: 60,
     blurb:
@@ -276,7 +276,7 @@ export const SERVICES: Service[] = [
     id: "undercarriage-cleaning",
     name: "Undercarriage Cleaning",
     category: "addons",
-    vehicle: "Cars & boats",
+    vehicle: "All vehicles",
     duration: "30 min",
     price: 50,
     blurb: "Flushes out dirt, salt, and buildup from beneath the vehicle.",
@@ -286,7 +286,7 @@ export const SERVICES: Service[] = [
     id: "wheel-polishing",
     name: "Wheel Polishing",
     category: "addons",
-    vehicle: "Cars & boats",
+    vehicle: "All vehicles",
     duration: "2 hrs",
     price: 199,
     priceNote: "Call for pricing",
